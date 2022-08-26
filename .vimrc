@@ -24,8 +24,11 @@ let username = "VlaSard"
 
 " Colors and theme {
 
-    colorscheme slate        " установить цветовую схему
-    set background=dark      " установить цвет фона
+    " установить цветовую схему
+    colorscheme slate
+
+    " установить цвет фона
+    set background=dark
 
 	" Разрешить смену фона
     function! ToggleBG()
