@@ -39,6 +39,7 @@ let username = "VlaSard"
         else
             set background=dark
         endif
+
     endfunction
     " noremap <leader>bg :call ToggleBG()<CR>
 
@@ -147,21 +148,14 @@ set autoread
 
 " -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
 
-"autocmd FileType c,cpp,java,go,php,javascript,puppet,python,rust,twig,xml,yml,perl,sql autocmd BufWritePre <buffer> if !exists('g:spf13_keep_trailing_whitespace') | call StripTrailingWhitespace() | endif
-"autocmd BufNewFile,BufRead *.html.twig set filetype=html.twig
-"autocmd FileType haskell,puppet,ruby,yml setlocal expandtab shiftwidth=2 softtabstop=2
-"autocmd BufNewFile,BufRead *.coffee set filetype=coffee
-"autocmd FileType haskell setlocal commentstring=--\ %s
-"autocmd FileType haskell,rust setlocal nospell
-
-" -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
 "hotkeys {
 
     " ctrl + q - выйти без сохранения
     nnoremap <C-q> :q!<CR>
+
     " ctrl + s - сохранить файл
     nnoremap <C-s> :w<CR>
+
     " F12 - изменение фона
     noremap <f12> :call ToggleBG()<CR>
 
