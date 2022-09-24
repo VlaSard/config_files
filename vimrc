@@ -63,7 +63,7 @@ let username = "VlaSard"
         set showcmd
     endif
 
-    set lines=80 columns=90
+    set lines=80 columns=120
 
     " отступ от левой границы окна
     set foldcolumn=2
